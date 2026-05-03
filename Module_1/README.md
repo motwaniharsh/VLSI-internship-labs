@@ -1,6 +1,6 @@
 # Module 1 - Introduction to Verilog RTL Design and Synthesis
 
-## Subtopic: Introduction to Open-Source Simulator (Iverilog)
+## Subtopic 1: Introduction to Open-Source Simulator (Iverilog)
 
 ---
 
@@ -63,7 +63,6 @@ We have to add a github repository which will contain all the files and tools we
 We used this command to add the repository:
 ```bash
 git clone https://github.com/vsdip/vsd-rtl.git
-
 ```
 ![Output](./screenshots/2.1.png)
 
@@ -71,4 +70,31 @@ Now in this repo we can see the sky130RTLDesignAndSynthesisWorkshop directory, w
 
 ---
 
+Now we will work in verilog_files directory. In this directory we can see verilog designs and their corresponding TestBench files(startng with tb_).
+command to launch a MUX file using iverilog:
+```bash
+iverilog good_mux.v tb_good_mux.v
+./a.out
+gtkave tb_good_mux.vcd
+```
 
+NOTE: if any tool is not installed, intall it using
+```bash
+sudo apt install _____
+```
+![sim flow](./screenshots/2.2.png)
+
+Now the GTKWave window will open. Just drag and drop the inputs and Zoom fit to see the output waveform for the MUX.
+![sim flow](./screenshots/2.3.png)
+
+---
+
+Now we will look at the file structure of the verilog files. run the command:
+```bash
+gvim good_mux.v -o tb_good_mux.v
+```
+![sim flow](./screenshots/2.4.png)
+Here we can see the differences between Design and TestBench files and also change the simulation time in the TestBench file.
+Hence this file serves as the Simualtion generator.
+
+---
