@@ -98,3 +98,82 @@ Here we can see the differences between Design and TestBench files and also chan
 Hence this file serves as the Simualtion generator.
 
 ---
+
+---
+
+## Subtopic 3: Introduction to Yosys and Logic Synthesis
+
+---
+
+## Objective
+
+To understand the concept of logic synthesis, the role of Yosys, and how RTL code is converted into a gate-level netlist.
+
+---
+
+## Theory
+
+### 🔹 Synthesizer
+
+A synthesizer is a tool used to convert RTL design into a netlist.
+Yosys is the synthesizer used in this course.
+
+### 🔹 Yosys Setup
+
+The design (RTL code) and the library (.lib file) are given as input to Yosys.
+Yosys processes these inputs and generates a netlist file.
+A netlist is the representation of the design in terms of standard cells.
+![sim flow](./screenshots/3.1.png)
+
+### 🔹 RTL Design
+
+RTL design is a behavioral representation of the required specification.
+It is written using Verilog HDL and describes how the system behaves.
+
+### 🔹 Synthesis
+
+Synthesis is the process of converting RTL code into gate-level representation.
+The design is mapped into logic gates and their interconnections.
+The final output of synthesis is a file called a netlist.
+![sim flow](./screenshots/3.2.png)
+
+### 🔹 What is .lib
+
+.lib file is a collection of standard cells (logic gates).
+It includes different types of gates like AND, OR, NOT, etc.
+Each gate can have multiple variants such as slow, medium, and fast.
+
+### 🔹 Why Different Flavours of Gates
+
+The delay in logic circuits determines the maximum speed of operation.
+Faster cells reduce delay but consume more area and power.
+
+### 🔹 Why We Need Slow Cells
+
+Slow cells are required to avoid hold time violations.
+A balance of fast and slow cells is necessary for proper circuit operation.
+
+### 🔹 Faster vs Slower Cells
+
+Faster cells → lower delay, higher area and power
+Slower cells → higher delay, lower area and power
+Hence, there is a trade-off between performance, area, and power.
+
+### 🔹 Selection of Cells
+
+The synthesizer selects appropriate cells based on constraints.
+Using more fast cells increases performance but may cause power and area issues.
+Using more slow cells may reduce performance.
+Constraints guide the synthesizer to choose the optimal combination.
+
+---
+
+## Conclusion
+
+Understood the process of logic synthesis, the role of Yosys, and how RTL designs are converted into gate-level netlists using standard cell libraries.
+
+---
+
+---
+
+
