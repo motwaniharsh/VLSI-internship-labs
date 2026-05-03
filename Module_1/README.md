@@ -1,4 +1,4 @@
-<img width="348" height="53" alt="image" src="https://github.com/user-attachments/assets/08bf0eb9-694a-4baa-8976-dbe21e787b16" /># Module 1 - Introduction to Verilog RTL Design and Synthesis
+# Module 1 - Introduction to Verilog RTL Design and Synthesis
 
 ## Subtopic 1: Introduction to Open-Source Simulator (Iverilog)
 
@@ -176,7 +176,7 @@ Understood the process of logic synthesis, the role of Yosys, and how RTL design
 
 ---
 
-## Subtopic 4: Labs using Yosys and Sky130 PDks
+## Subtopic 4: Labs using Yosys and Sky130 PDKs
 
 ---
 
