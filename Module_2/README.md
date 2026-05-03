@@ -1,1 +1,32 @@
+# Module 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
+
+## Subtopic 1: Introduction to timing .libs
+
+---
+
+We will open and take a look at the Sky130 library and try to understand it.
+Command to open library (make sure you are in the same directory as the library):
+```bash
+gvim sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+![Output](./screenshots/1.1.png)
+![Output](./screenshots/1.2.png)
+
+### PVT Variations and .lib File:
+
+Digital circuits are affected by PVT variations:
+* P (Process): Variations during fabrication (device size, doping, etc.) {indicated by tt - typical process}
+* V (Voltage): Supply voltage fluctuations {indicated by 025C}
+* T (Temperature): Operating temperature changes {indicated by 1v8}
+
+It also gives information about various other things like technology, delay_model, units of voltage, current, resistance, etc.
+
+Now here are different types of cells in the library:
+![Output](./screenshots/1.3.png)
+And it also shows the various features of the cells, like the power information, the timing information, etc.
+
+We can also see different flavours of the same type of cells consuming different areas and powers.
+
+---
+
 
