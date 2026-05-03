@@ -29,4 +29,62 @@ We can also see different flavours of the same type of cells consuming different
 
 ---
 
+## Subtopic 2: Hierarchical vs Flat Synthesis
 
+Open the multiple_modules files by using the command:
+```bash
+gvim multiple_modules.v
+```
+![Output](./screenshots/2.1.png)
+
+Now launch yosys and give all the commands given below:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+```
+Here we can see the it only shows us the Hierarchical design.
+![Output](./screenshots/2.2.png)
+
+Now open the netlist:
+```bash
+write_verilog -noattr multiple_modules_hier.v
+!gvim multiple_modules_hier.v
+```
+![Output](./screenshots/2.3.png)
+This is the prime example of De-morgan's Theorem.
+
+Now give the command to write a Flat netlist:
+```bash
+flatten
+write_verilog -noattr multiple_modules_flat.v
+!gvim multiple_modules_flat.v
+```
+![Output](./screenshots/2.4.png)
+
+Now exit yosys. and then re-enter it. then Give the following commands to view the flattened design:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+flatten
+show
+```
+![Output](./screenshots/2.5.png)
+
+Now we will do the synthesis at sub-module level.
+So again exit and re-enter yosys. Then give the following commands:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top sub_module1
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+![Output](./screenshots/2.6.png)
+Module level systhesis is prefered when we have multiple instances of the same module OR we ant to do divide and conquer approach.
+
+---
