@@ -133,3 +133,5 @@ The final part extends these optimization concepts by examining more advanced te
 
 This subtopic provided a clear understanding of flip-flop behavior, coding styles, and optimization techniques, demonstrating how design choices directly influence synthesis results and circuit efficiency.
 
+---
+---
