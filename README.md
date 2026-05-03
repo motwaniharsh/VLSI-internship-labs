@@ -36,7 +36,7 @@ Through these modules, I explored:
 * Introduction to Yosys for synthesis
 * Running synthesis with Sky130 standard cell libraries
 
- [Explore Module 1](./Module1)
+ [Explore Module 1](./Module_1)
 
 ---
 
@@ -47,7 +47,7 @@ Through these modules, I explored:
 * Exploring different flip-flop coding styles
 * Basic optimization strategies for digital design
 
- [Explore Module 2](./Module2)
+ [Explore Module 2](./Module_2)
 
 ---
 
