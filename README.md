@@ -29,7 +29,7 @@ Through these modules, I explored:
 
 ## Modules Covered
 
-### 🔹 Module 1 – Verilog RTL Design and Synthesis Basics
+### Module 1 – Verilog RTL Design and Synthesis Basics
 
 * Working with open-source simulator (Iverilog)
 * Performing simulations and analyzing waveforms
@@ -40,7 +40,7 @@ Through these modules, I explored:
 
 ---
 
-### 🔹 Module 2 – Timing Libraries and Optimization Techniques
+### Module 2 – Timing Libraries and Optimization Techniques
 
 * Understanding timing libraries (.lib files)
 * Comparing hierarchical and flat synthesis approaches
