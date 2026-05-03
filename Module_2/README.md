@@ -29,6 +29,9 @@ We can also see different flavours of the same type of cells consuming different
 
 ---
 
+---
+
+
 ## Subtopic 2: Hierarchical vs Flat Synthesis
 
 Open the multiple_modules files by using the command:
@@ -88,3 +91,46 @@ show
 Module level systhesis is prefered when we have multiple instances of the same module OR we ant to do divide and conquer approach.
 
 ---
+
+---
+
+---
+
+## Subtopic 3: Various Flop Coding Styles and Optimization
+
+---
+
+### Overview
+
+This section focuses on understanding the importance of flip-flops in digital design, different coding styles, and how optimization techniques influence synthesis results and overall circuit performance.
+
+---
+
+### Topics Covered
+
+Flip-flops play a crucial role in sequential circuits, and their behavior depends heavily on how they are described in Verilog. Different coding styles can lead to variations in synthesized hardware, affecting timing, area, and power.
+
+This subtopic also explores how simulation and synthesis of flop-based designs are carried out, along with the role of optimization techniques in improving circuit efficiency.
+
+---
+
+### Lab Breakdown
+
+In the first part, the fundamental need for flip-flops in digital systems is discussed along with an introduction to different coding styles used to implement them.
+
+The second part continues this discussion by exploring various coding approaches in more depth and analyzing how these differences impact the synthesized hardware.
+
+The third part involves practical lab work where flop-based designs are simulated and their waveform behavior is observed to verify correctness.
+
+In the fourth part, additional simulations are performed to further validate the designs and compare outputs with expected results.
+
+The fifth part introduces optimization techniques and explains how they affect parameters such as timing and area in digital circuits.
+
+The final part extends these optimization concepts by examining more advanced techniques and understanding the trade-offs between performance, power, and area.
+
+---
+
+### Conclusion
+
+This subtopic provided a clear understanding of flip-flop behavior, coding styles, and optimization techniques, demonstrating how design choices directly influence synthesis results and circuit efficiency.
+
