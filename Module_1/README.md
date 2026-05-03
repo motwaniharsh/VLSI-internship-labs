@@ -60,3 +60,24 @@ To understand the basics of Verilog design, simulation, and testbench.
 
 Understood the basic concepts of simulator, design, and testbench along with the working of Iverilog simulation flow.
 
+---
+
+---
+
+## Subtopic 2: Labs using iverilog and gtkwave
+
+---
+
+We have to add a github repository which will contain all the files and tools we will be needing.
+We used this command to add the repository:
+```bash
+git clone https://github.com/vsdip/vsd-rtl.git
+
+```
+![Output](./screenshots/output2.png)
+
+Now in this repo we can see the sky130RTLDesignAndSynthesisWorkshop directory, which will have lib directory containing sky130 standard cell library and also the my_lib directory containg the verilog models and finally the verilog_files directory containing all the verilog files which we will be using during our labs.
+
+---
+
+
