@@ -33,7 +33,7 @@ To understand the basics of Verilog design, simulation, and testbench.
 * Simulator monitors changes in input signals.
 * When input changes, output is evaluated.
 * If there is no change in input, output remains unchanged.
-![how sim works](./screenshots/Screenshot 2026-05-03 145226.png)
+![how sim works](./screenshots/1.1.png)
 
 ---
 
@@ -42,7 +42,7 @@ To understand the basics of Verilog design, simulation, and testbench.
 * Design and Testbench are given as input to the simulator.
 * Simulator generates output in the form of waveform (VCD file).
 * Output is visualized using waveform viewer (GTKWave).
-![sim flow](./screenshots/Screenshot 2026-05-03 145240.png)
+![sim flow](./screenshots/1.2.png)
 
 ---
 
