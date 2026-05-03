@@ -1,4 +1,4 @@
-# Module 1 - Introduction to Verilog RTL Design and Synthesis
+<img width="348" height="53" alt="image" src="https://github.com/user-attachments/assets/08bf0eb9-694a-4baa-8976-dbe21e787b16" /># Module 1 - Introduction to Verilog RTL Design and Synthesis
 
 ## Subtopic 1: Introduction to Open-Source Simulator (Iverilog)
 
@@ -176,4 +176,56 @@ Understood the process of logic synthesis, the role of Yosys, and how RTL design
 
 ---
 
+## Subtopic 4: Labs using Yosys and Sky130 PDks
 
+---
+
+Firstly we will invoke Yosys. Give the command:
+```bash
+yosys
+```
+Now we will read the library in yosys:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+Now read the design:
+```bash
+read_verilog good_mux.v
+```
+Then selet the module to synthesise:
+```bash
+synth -top good_mux
+```
+![sim flow](./screenshots/4.1.png)
+
+Now since we read the library and design files, we will now generate the netlist.
+```bash
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+Finally re-check the report is correct by cheching the input, output and internal signals.
+To see the graphical version of logic representation, the command is:
+```bash
+show
+```
+![sim flow](./screenshots/4.2.png)
+![sim flow](./screenshots/4.3.png)
+
+---
+
+Now let us see how to write the netlist. The command to write and then view it is:
+```bash
+write_verilog good_mux_netlist.v
+!gvim good_mux_netlist.v
+```
+![sim flow](./screenshots/4.4.png)
+![sim flow](./screenshots/4.5.png)
+
+Now to view the netlist in a much simplier version:
+```bash
+write_verilog -noattr good_mux_netlist.v
+!gvim good_mux_netlist.v
+```
+![sim flow](./screenshots/4.6.png)
+![sim flow](./screenshots/4.7.png)
+
+---
