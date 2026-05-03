@@ -8,6 +8,6 @@ This repository contains my work for internship screening.
 
 ### Module 1 - Introduction to Verilog RTL Design and Synthesis
 
-[Click to view Module 1](./Module1)
+[Click to view Module 1](./Module_1)
 
 ### Module 2 - (Add later)
