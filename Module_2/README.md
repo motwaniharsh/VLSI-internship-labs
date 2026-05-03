@@ -94,7 +94,6 @@ Module level systhesis is prefered when we have multiple instances of the same m
 
 ---
 
----
 
 ## Subtopic 3: Various Flop Coding Styles and Optimization
 
