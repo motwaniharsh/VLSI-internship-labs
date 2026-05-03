@@ -33,6 +33,7 @@ To understand the basics of Verilog design, simulation, and testbench.
 * Simulator monitors changes in input signals.
 * When input changes, output is evaluated.
 * If there is no change in input, output remains unchanged.
+![how sim works](./screenshots/Screenshot 2026-05-03 145226.png)
 
 ---
 
@@ -41,18 +42,7 @@ To understand the basics of Verilog design, simulation, and testbench.
 * Design and Testbench are given as input to the simulator.
 * Simulator generates output in the form of waveform (VCD file).
 * Output is visualized using waveform viewer (GTKWave).
-
----
-
-## Screenshots
-
-### 1. PPT / Theory Reference
-
-(Add screenshot of the PPT slide here)
-
-### 2. Simulation Flow Diagram
-
-(Add screenshot of simulation flow if shown in video)
+![sim flow](./screenshots/Screenshot 2026-05-03 145240.png)
 
 ---
 
@@ -61,6 +51,7 @@ To understand the basics of Verilog design, simulation, and testbench.
 Understood the basic concepts of simulator, design, and testbench along with the working of Iverilog simulation flow.
 
 ---
+
 
 ---
 
@@ -74,7 +65,7 @@ We used this command to add the repository:
 git clone https://github.com/vsdip/vsd-rtl.git
 
 ```
-![Output](./screenshots/output2.png)
+![Output](./screenshots/2.1.png)
 
 Now in this repo we can see the sky130RTLDesignAndSynthesisWorkshop directory, which will have lib directory containing sky130 standard cell library and also the my_lib directory containg the verilog models and finally the verilog_files directory containing all the verilog files which we will be using during our labs.
 
